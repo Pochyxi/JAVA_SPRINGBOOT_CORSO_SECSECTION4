@@ -4,13 +4,10 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
-import org.springframework.security.crypto.password.NoOpPasswordEncoder;
+import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
-
-
-import static org.springframework.security.config.Customizer.withDefaults;
-
 
 /* @Configuration, indica che è una classe di configurazione per l'applicazione Spring.
  */
@@ -30,7 +27,7 @@ public class ProjectSecurityConfig {
      */
     @Bean
     SecurityFilterChain defaultSecurityFilterChain( HttpSecurity http ) throws Exception {
-        http.csrf( ( csrf ) -> csrf.disable() )
+        http.csrf( AbstractHttpConfigurer::disable )
                 .authorizeHttpRequests( ( requests ) -> requests
                         .requestMatchers( "/myAccount", "/myLoans", "/myBalance", "/myCards" ).authenticated()
                         .requestMatchers( "/notices", "/contact", "/register" ).permitAll() )
@@ -42,6 +39,6 @@ public class ProjectSecurityConfig {
 
     @Bean
     public PasswordEncoder passwordEncoder() {
-        return NoOpPasswordEncoder.getInstance();
+        return new BCryptPasswordEncoder();
     }
 }

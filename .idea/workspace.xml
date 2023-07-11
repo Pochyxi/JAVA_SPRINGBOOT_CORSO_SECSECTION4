@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e36057fc-58a2-42cf-9d18-bae98afcd9c3" name="Changes" comment="dvlpz" />
+    <list default="true" id="e36057fc-58a2-42cf-9d18-bae98afcd9c3" name="Changes" comment="dvlpz">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/developez/config/ProjectSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/developez/config/ProjectSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/developez/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/developez/controller/LoginController.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,6 +69,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
     "last_opened_file_path": "/Users/adienerlopez/Documents/GitHub/JAVA_SPRINGBOOT_CORSO_SECSECTION4/pom.xml",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -119,6 +124,7 @@
       <workItem from="1688983654385" duration="1889000" />
       <workItem from="1688988079917" duration="117000" />
       <workItem from="1688988202173" duration="187000" />
+      <workItem from="1688988392635" duration="3540000" />
     </task>
     <task id="LOCAL-00001" summary="dvlpz">
       <created>1688755854431</created>
